@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.align-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+/* header */
+header {
+  
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/bg.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+ flex: 1;
+ text-align: right;
+}
+
+.nav-links ul li{
+list-style-type: none;
+display: inline-block;
+padding: 10px ;
+position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.nav-links ul li a::after{
+    content: "";
+    width: 100%;
+    background-color: red;
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 3px;
+    margin-top: 5px;
+}
+.nav-links ul li a:hover::after{
+    
+    width: 100%;
+    transition: 0.3s;
+}
+nav .bi{
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* text-box */
+.text-box{
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.text-h{
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+    padding: 10px 0;
+    
+}
+.text-p{
+    color: white;
+    padding-bottom: 30px;
+}
+.hero-btn{
+    color: white;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    
+}
+.hero-btn:hover{
+    background-color: red;
+    transition: 0.3s;
+    
+    /* sec1 */
+}
+
+.kurslar{
+    padding: 10px 0;
+}
+.orta h2{
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.genel{
+    display: flex;
+    justify-content: space-between;
+}
+.kurslar h2{
+    font-size: 20px;
+    margin: 10px auto;
+    margin-top: 5%;
+    
+    
+}
+.kurslar{
+    background-color: beige;
+    padding: 20 10px;
+    margin-top: 5%;
+    box-sizing: border-box;
+    flex-basis: 30%;
+    border-radius: 10px;
+}
+
+.kurslar:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: 0.7s;
+    cursor: pointer;
+}
+/* sec2 */
+.sec2{
+   width: 100%;
+    margin: 35px auto;
+}
+.sec2 h2{
+    font-size: 40px;
+    padding: 10px 0;
+}
+.genel col img{
+    
+    width: 100%;
+   border-radius: 20px;
+   z-index: 2;
+   display: block;
+   
+
+   
+   
+   
+}
+.col{
+    box-sizing: border-box; 
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-basis: 30%;
+    
+ 
+}
+.layerd{
+    
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    color: black;
+
+
+}
+.layerd:hover{
+    background-color: rgba(200, 0, 0, 0.5);
+    
+}
+
+.layerd h3{
+ opacity: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transition: 0.3s;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    
+}
+.layerd:hover h3{
+    bottom: 50%;
+    transition: 0.3s;
+    opacity: 1;
+    
+}
+/* ortak birimlerimiz */
+.birim h2{
+   
+    font-size: 35px;
+    padding: 20px 0;
+}
+.birim p{
+    
+   margin: 15px 0;
+}
+.birimlergenel{
+    
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.birim-img{
+background-size: cover;
+text-align: left;
+background-repeat: no-repeat;
+}
+
+.birim-img img{
+    
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 100%;
+}
+/* yorumlar */
+.yorumlar h2{
+   
+    font-size: 25px;
+    padding: 20px 0;
+}
+.yorumlar p{
+    
+   margin: 15px 0;
+}
+.yorum2 img{
+    width: 80px;
+    height: 70px;
+   border-radius: 50px;
+}
+.yorum2{
+    display: flex;
+    column-gap: 15px;
+}
+.yorumx{
+ text-align: left;
+ background-color: beige;
+ box-sizing: border-box; 
+ margin-bottom: 25px;
+}
+
+.yorum1{
+    display: flex;
+}
+
+.yorumx .bi{
+    color: red;
+    margin-bottom: 10px;
+}
+.yorumx h2{
+    margin-top: -15px;
+    padding: 0;
+}
+
+/* ua */
+.ua{
+    margin-top: 100px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/london.jpeg);
+padding: 100px 0;
+background-position: center;
+background-size: cover;
+border-radius: 15px;
+text-align: center;
+color: white;
+}
+.ua h1{
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 30px;
+}
+
+/* footer */
+footer h2{
+   
+    font-size: 35px;
+    margin: 15px auto;
+}
+
+footer p{
+    
+    margin: 15px 0;
+}
+.sosyal .bi{
+    color: red;
+    text-align: center;
+    margin: 0 25px;
+}
+.bi-heart-fill{
+color: red;
+}
+
+
+
+
+
+/* responsive */
+@media (max-width:576px){
+    nav .bi{
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .text-h{
+font-size: 40px;
+    }
+    .genel{
+        display: block;
+    }
+    .birimlergenel{
+    
+        display:block;
+       
+        
+    }
+
+    .yorum1{
+        display:block;
+       
+
+    }
+    
+
+
+
+
+
+}
